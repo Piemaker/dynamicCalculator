@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Calculator</title>
+    <script type="module" src="./dynamicCalculator.js"></script>
+
+    <link rel="stylesheet" href="./dynamicCalculator.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org/face/segment7"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <tr>
+        <th colspan="4">
+          <input
+            class="table__input table__input--formula"
+            type="text"
+            readonly
+            name=""
+            id="data-previous-operand"
+            value="0"
+          />
+        </th>
+      </tr>
+      <tr>
+        <th colspan="4">
+          <input
+            class="table__input table__input--number"
+            type="text"
+            readonly
+            name=""
+            id="data-current-operand"
+            value="0"
+          />
+        </th>
+      </tr>
+      <tbody id = "table__body" style="width: 100%">
+        <!-- dynamic values -->
+      </tbody>
+    </table>
+  </body>
+</html>
